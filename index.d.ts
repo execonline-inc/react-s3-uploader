@@ -19,12 +19,8 @@ declare module 'react-s3-uploader' {
     onProgress?: (percent: number, status: string, file: File) => void;
     onError?: (message: string) => void;
     onFinish?: (result: S3Response, file: File) => void;
-    signingUrlHeaders?: {
-      additional: object;
-    };
-    signingUrlQueryParams?: {
-      additional: object;
-    };
+    signingUrlHeaders?: Object | (() => Object);
+    signingUrlQueryParams?: Object | (() => Object);
     signingUrlWithCredentials?: boolean;
     uploadRequestHeaders?: object;
     contentDisposition?: string;
