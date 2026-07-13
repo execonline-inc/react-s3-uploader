@@ -1,6 +1,6 @@
 {
   "name": "react-s3-uploader",
-  "version": "4.9.3-patch.3",
+  "version": "4.9.3-patch.4",
   "description": "React component that renders a file input and automatically uploads to an S3 bucket",
   "main": "index.js",
   "scripts": {
@@ -34,8 +34,5 @@
   "devDependencies": {
     "@types/react": "*",
     "typescript": "^3.7.5"
-  },
-  "optionalDependencies": {
-    "aws-sdk": "2.x"
   }
 }
